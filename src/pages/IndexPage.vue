@@ -9,6 +9,7 @@
       <button @click="subtraction(firstValue,secondValue)" >Subtraction</button>
       <button @click="multiplication(firstValue,secondValue)" >Multiplication</button>
       <button @click="divide(firstValue,secondValue)" >Divide</button>
+      <button @click="submitForm()" class="submitForm">Submit</button>
   </form>
   </div>
 </template>
@@ -41,6 +42,11 @@ export default {
     },
     divide(first, second) {
       this.answerVulue =  Number(first) / Number(second)
+      return this.answerVulue;
+    },
+    //create for the function addname retrun the value of the first and second value String
+    addname(first, second) {
+      this.answerVulue =  first + " " + second
       return this.answerVulue;
     },
   },

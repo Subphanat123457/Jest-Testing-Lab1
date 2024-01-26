@@ -49,6 +49,9 @@ export default {
       this.answerVulue =  first + " " + second
       return this.answerVulue;
     },
+    submitForm() {
+      this.$emit('submit form')
+    },
   },
 }
 </script>

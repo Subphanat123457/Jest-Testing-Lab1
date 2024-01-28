@@ -45,8 +45,8 @@ export default {
       return this.answerVulue;
     },
     //create for the function addname retrun the value of the first and second value String
-    addname(first, second) {
-      this.answerVulue =  first + " " + second
+    addname(first, second, answer) {
+      this.answerVulue =  first + " " + second + " " + answer
       return this.answerVulue;
     },
     submitForm() {

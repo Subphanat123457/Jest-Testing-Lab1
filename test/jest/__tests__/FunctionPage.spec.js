@@ -46,9 +46,9 @@ test('trigger click event on button ', async() => {
 })
 
 // create test for the function addname
-test('trigger click event on button name ', async() => {
+test('trigger click event on button name and code', async() => {
     const wrapper = shallowMount(FunctionPage)
     const button = wrapper.find('button')
     await button.trigger('click')
-    expect(wrapper.vm.addname('Supanat', 'Wiboonpanit')).toBe('Supanat Wiboonpanit')
+    expect(wrapper.vm.addname('Supanat', 'Wiboonpanit', '6404101344')).toBe('Supanat Wiboonpanit 6404101344')
 })
